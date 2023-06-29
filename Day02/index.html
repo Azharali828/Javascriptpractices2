@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Button on off in Javascript</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nisi eum ratione enim eligendi tenetur
+        doloremque aut dicta, repellendus dolorum velit dignissimos ab dolorem perspiciatis ex totam officia est
+        cupiditate.
+    </p>
+    <button onclick="handleOnButtonClick()">ON</button>
+    <p id="paraId"></p>
+    <img id="imgId"src="./images/bulb 1.jpg" height="200" width="200">
+    <button onclick="handleOffButtonClick()">Off</button>
+    <script>
+        function handleOnButtonClick() {
+            document.getElementById("imgId").src="./images/bulb 2.jpg";
+            document.getElementById("paraId").innerHTML="The bulb is ON now"
+                    }
+                    function handleOffButtonClick() {
+                        document.getElementById("imgId").src="./images/bulb 1.jpg";
+            document.getElementById("paraId").innerHTML="The bulb is off now"
+                    }
+    </script>
+</body>
+
+</html>
