@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions of JS</title>
+</head>
+<body>
+   <h1>Functions Example</h1> 
+   <p id="demo"></p>
+   <script>
+    function myFunction (arg1, arg2) {
+        console.log("Inside myFunction::",arg1,arg2);
+        return arg1 * arg2;
+        
+        }
+        const result = myFunction(3,8)
+        console.log("The result is ::",result);
+        const result1 = myFunction(8,8)
+        console.log("The result1 is ::",result1);
+        
+        
+    document.getElementById("demo").innerHTML= myFunction (5,10)
+   </script>
+</body>
+</html>
